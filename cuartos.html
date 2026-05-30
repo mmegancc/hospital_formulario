@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuartos </title>
+</head>
+<body>
+
+<header>
+    <h1>Cuartos -  Hospital Ciencia y Compasion</h1>
+    <img width="250" align="center" src="logoh.png";>
+    <p> Rellene los datos solicitados </p>
+
+<main>
+    <div class="form-container">
+        <form action="altas.html" method="POST">
+            <div class="form-group">
+                <label>Habitación </label>
+                <input type="text" name="habitacion" required>
+            </div>
+           
+            <div class="form-group">
+                <label>Ocupado </label>
+                <input type="text" name="ocupado" placeholder="Ej: Si/No " required>
+            </div>
+           
+            <div class="form-group">
+                <label>Situacion del servicio</label>
+                <input type="text" name="sit_servicio" placeholder="Ej: En cirugia " required>
+            </div>
+           
+            <div class="form-group">
+                <label>Observación del paciente</label>
+                <input type="text" name="Ob_paciente" placeholder="Ej: Bartolo Cruz Asma" required>
+            </div>
+  
+
+            <button type="submit" class="btn-submit">Buscar Cuartos</button>
+        </form>
+    </div>
+
+    <a href="index.html" class="btn-back"> Volver al Inicio</a>
+</main>
+
+<footer>
+    <p style=" color: #F5EFEB"; >Carreon Cuevas Megan Naomi - Programación</p>
+    <p style=" color: #F5EFEB"; >243080512805255 - 4-I</p>
+</footer>
+
+</body>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Poppins", sans-serif;
+        background-color: : : : #567C8d;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    header {
+        background-color: #B2C4D7;
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+        color: #F5EFEB;
+        font-family: 'Jua', sans-serif;
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 40px 20px;
+        flex: 1;
+    }
+
+    .form-container {
+        max-width: 500px;
+        width: 100%;
+        background: white;
+        padding: 35px;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(147, 205, 219);
+        border-top: 6px solid #C9E6ED;
+    }
+
+    .form-group {
+        margin-bottom: 22px;
+    }
+   
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #555;
+        font-size: 14px;
+    }
+   
+    input[type="text"], input[type="number"], input[type="date"] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #B2C4D7;
+        border-radius: 6px;
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        background-color: #F5EFEB;
+        color: #333;
+        transition: all 0.3s ease;
+    }
+
+    input:focus {
+        outline: none;
+        border-color: #ca9ec3;
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(127, 169, 173);
+    }
+
+    .btn-submit {
+        background-color: #A7D6E2;
+        color: white;
+        border: none;
+        padding: 14px 15px;
+        width: 100%;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-family: "Poppins", sans-serif;
+        margin-top: 10px;
+    }
+
+    .btn-submit:hover {
+        background-color:#b382ab ;
+    }
+
+    .btn-back {
+        display: inline-block;
+        text-align: center;
+        margin-top: 25px;
+        color: #888;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .btn-back:hover {
+        color: #B2D4D7;
+    }
+
+    footer {
+        width: 100%;
+        background-color: #567C8d;
+        padding: 15px 0;
+        text-align: center;
+        font-size: 13px;
+        color: #776a78;
+    }
+
+    footer p {
+        margin: 4px 0;
+        font-family: 'Poppins', sans-serif;
+    }
+</style>
+</html>
